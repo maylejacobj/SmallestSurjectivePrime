@@ -1,6 +1,6 @@
 # SmallestSurjectivePrime
 
-This repository contains the code accompanying the paper *A uniform bound on the smallest surjective prime* by Tyler Genao, Jacob Mayle, and Jeremy Rouse.
+This repository contains the code accompanying the paper [A uniform bound on the smallest surjective prime of an elliptic curve](https://arxiv.org/abs/2501.02345) by Tyler Genao, Jacob Mayle, and Jeremy Rouse.
 
 The goal of the code is to construct models of the modular curves that appear in the paper, provably determine their rational places, and give an analysis of the j-invariants. We consider modular curves that are fiber products of two prime-power level modular curves. In most cases, we construct these models using the function `ConstructFiberProduct`, but in two cases, we rely on Zywina's `FindModelOfXG`. The models produced by `ConstructFiberProduct` tend to be singular. We provably compute all rational places by calling the functions `RationalPlacesGenus1` or `RationalPlacesGenus2`, or by checking local solvability, as appropriate. In one case, we follow an ad hoc method that involves taking a quotient by an automorphism. The function `AnalyzePlaces` provides the relevant analysis of each rational place, printing the j-invariant, whether it is CM, and the nonsurjective primes.
 
